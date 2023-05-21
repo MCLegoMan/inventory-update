@@ -11,7 +11,7 @@ public class InventoryConfigProvider implements SimpleConfig.DefaultConfig {
     private final List<Pair> configsList = new ArrayList<>();
     public void addKeyValuePair(Pair<String, ?> keyValuePair) {
         configsList.add(keyValuePair);
-        configContents += keyValuePair.getFirst() + "=" + keyValuePair.getSecond();
+        configContents += keyValuePair.getFirst() + "=" + keyValuePair.getSecond() + "\n";
     }
     public void addComment(String string) {
         configContents += "#" + string + "\n";

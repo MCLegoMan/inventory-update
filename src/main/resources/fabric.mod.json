@@ -3,7 +3,7 @@
 	"id": "inventory-update",
 	"version": "${version}",
 	"name": "Inventory Update",
-	"description": "This mod fixes minecraft's inventory problem, by forcing you to use one item at a time.\n\nYou can configure the max item count in the config file.\n\nCredits and Attribution:\n- SimpleConfig",
+	"description": "This mod fixes minecraft's inventory problem, by forcing you to use one item at a time.\n\nYou can configure the max item count in the config file.\n\nCredits and Attribution:\n- SimpleConfig\n- Stacc",
 	"authors": [
 		"MCLegoMan"
 	],
@@ -24,6 +24,7 @@
 		"inventory-update.mixins.json"
 	],
 	"depends": {
-		"minecraft": "~1.19.4"
+		"minecraft": "~1.19.4",
+		"stacc": "*"
 	}
 }

@@ -12,7 +12,10 @@ public abstract class InventoryItemSettings {
     @Shadow int maxCount;
     @ModifyVariable(method = "maxCount", at = @At("RETURN"), argsOnly = true)
     private int maxCount(int maxCount) {
-        if (this.maxCount != 1) return InventoryConfig.MAX_STACK;
-        return this.maxCount;
+        if (this.maxCount != 1) {
+            if (this.maxCount == 16) return InventoryConfig.MAX_STACK_MINI;
+            else return InventoryConfig.MAX_STACK_DEFAULT;
+        }
+        else return this.maxCount;
     }
 }

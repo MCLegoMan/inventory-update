@@ -11,7 +11,10 @@ public class InventoryMain implements ModInitializer {
     public void onInitialize() {
         InventoryConfig.registerConfigs();
         for (Item item : Registries.ITEM) {
-            if (item.getMaxCount() != 1) ((InventoryItem) item).setMaxCount(InventoryConfig.MAX_STACK);
+            if (item.getMaxCount() != 1) {
+                if (item.getMaxCount() == 16) ((InventoryItem) item).setMaxCount(InventoryConfig.MAX_STACK_MINI);
+                else ((InventoryItem) item).setMaxCount(InventoryConfig.MAX_STACK_DEFAULT);
+            }
         }
     }
 }
