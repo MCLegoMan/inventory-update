@@ -3,9 +3,11 @@ This mod fixes minecraft's inventory problem, by forcing you to use one item at 
 ItemStack amounts are configureable for both normal and mini stacks.  
 Although, we don't see why you would raise this above 1.  
 
-**NOTE: Whilst it is not required, it is reccommended to have the same values on the client and server.**
+## Servers  
+The mod is required on both the client and server.  
+Whilst not required, it is reccommended to have the same config values on both the client and server.  
 
-**Requires:**  
+## Requires  
 - [Minecraft](https://minecraft.net) 1.19.4  
 - [Fabric](https://fabricmc.net)
 - [Stacc](https://github.com/Devan-Kerman/Stacc) (Bundled)  
