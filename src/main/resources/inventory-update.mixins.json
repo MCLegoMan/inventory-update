@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "com.mclegoman.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "InventoryItem",
+    "InventoryItemSettings"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}
