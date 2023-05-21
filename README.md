@@ -5,7 +5,7 @@ Although, we don't see why you would raise this above 1.
 
 ## Servers  
 The mod is required on both the client and server.  
-Whilst not required, it is reccommended to have the same config values on both the client and server.  
+Whilst not required, it is recommended to have the same config values on both the client and server.  
 
 ## Requires  
 - [Minecraft](https://minecraft.net) 1.19.4  
