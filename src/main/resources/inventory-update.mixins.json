@@ -3,7 +3,6 @@
   "package": "com.mclegoman.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "InventoryFabricItemSettings",
     "InventoryItem",
     "InventoryItemSettings"
   ],
