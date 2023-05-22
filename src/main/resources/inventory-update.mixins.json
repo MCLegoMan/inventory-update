@@ -3,8 +3,7 @@
   "package": "com.mclegoman.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "InventoryItem",
-    "InventoryItemSettings"
+    "InventoryItemStackSize"
   ],
   "injectors": {
     "defaultRequire": 1
