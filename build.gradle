@@ -19,7 +19,7 @@ dependencies {
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	include( modImplementation "net.devtech:stacc:1.5.2" )
+	include( modImplementation "net.devtech:stacc:${project.stacc_version}" )
 }
 
 processResources {
