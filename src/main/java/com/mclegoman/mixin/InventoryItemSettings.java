@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.ModifyVariable;
 
 @Mixin(value = Item.Settings.class)
 public abstract class InventoryItemSettings {
-    @ModifyVariable(method = "maxCount", at = @At("RETURN"), argsOnly = true)
+    @ModifyVariable(method = "maxCount", at = @At("HEAD"), argsOnly = true)
     private int maxCount(int maxCount) {
         if (maxCount != 1) {
             if (maxCount == 16) return InventoryConfig.MAX_STACK_MINI;
