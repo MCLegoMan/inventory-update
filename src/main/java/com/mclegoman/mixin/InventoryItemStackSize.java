@@ -20,6 +20,7 @@ public abstract class InventoryItemStackSize {
         }
     }
     private static int getStack(int maxStack) {
-        return Math.min(maxStack, 1073741823);
+        if (!InventoryConfig.REMOVE_LIMIT) return Math.min(maxStack, 1073741823);
+        return maxStack;
     }
 }
