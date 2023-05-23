@@ -8,4 +8,7 @@ public class InventoryMain implements ModInitializer {
     public void onInitialize() {
         InventoryConfig.registerConfigs();
     }
+    public static int getStack(int maxStack) {
+        return Math.min(maxStack, 1073741823);
+    }
 }
