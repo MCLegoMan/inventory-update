@@ -16,8 +16,11 @@ public abstract class InventoryItemStackSize {
     @Inject(method = "getMaxCount", at = @At("RETURN"), cancellable = true)
     private void getMaxCount(CallbackInfoReturnable<Integer> cir) {
         if (maxCount != 1) {
-            if (maxCount == 16) cir.setReturnValue(InventoryMain.getStack(InventoryConfig.MAX_STACK_MINI));
-            cir.setReturnValue(InventoryMain.getStack(InventoryConfig.MAX_STACK_DEFAULT));
+            if (maxCount == 16) cir.setReturnValue(getStack(InventoryConfig.MAX_STACK_MINI));
+            cir.setReturnValue(getStack(InventoryConfig.MAX_STACK_DEFAULT));
         }
+    }
+    private static int getStack(int maxStack) {
+        return Math.min(maxStack, 1073741823);
     }
 }
