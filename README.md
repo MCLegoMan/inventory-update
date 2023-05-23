@@ -11,6 +11,6 @@ Whilst not required, it is recommended to have the same config values on both th
 - [Minecraft](https://minecraft.net) 1.19.4  
 - [Fabric](https://fabricmc.net)
 - [Stacc](https://github.com/Devan-Kerman/Stacc) (Bundled)  
-- [SimpleConfig](https://github.com/magistermaks/fabric-simplelibs/tree/master/simple-config) (Bundled)  
+- [SimpleFabric](https://github.com/MCLegoMan/SimpleFabric) (Bundled)  
 
 [Download from GitHub](https://github.com/MCLegoMan/inventory-update/releases/latest)  

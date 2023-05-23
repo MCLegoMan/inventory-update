@@ -1,6 +1,7 @@
 package com.mclegoman.config;
 
 import com.mojang.datafixers.util.Pair;
+import com.mclegoman.simplefabric.fabric_simplelibs.simple_config.SimpleConfig;
 
 public class InventoryConfig {
     public static SimpleConfig CONFIG;

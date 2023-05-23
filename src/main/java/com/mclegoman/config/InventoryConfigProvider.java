@@ -1,8 +1,10 @@
 package com.mclegoman.config;
-import com.mojang.datafixers.util.Pair;
 
+import com.mojang.datafixers.util.Pair;
+import com.mclegoman.simplefabric.fabric_simplelibs.simple_config.SimpleConfig;
 import java.util.ArrayList;
 import java.util.List;
+
 public class InventoryConfigProvider implements SimpleConfig.DefaultConfig {
     private String configContents = "";
     public List<Pair> getConfigsList() {

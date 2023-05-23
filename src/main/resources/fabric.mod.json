@@ -25,6 +25,7 @@
 	],
 	"depends": {
 		"minecraft": "~1.19.4",
-		"stacc": "*"
+		"stacc": "*",
+		"simplefabric": "1.0.0"
 	}
 }
