@@ -1,6 +1,6 @@
 # inventory-update  
 This mod fixes minecraft's inventory problem, by forcing you to use one item at a time.  
-ItemStack amounts are configureable for both normal and mini stacks.  
+ItemStack amounts are configurable for both normal and mini stacks.  
 Although, we don't see why you would raise this above 1.  
 
 ## Servers  
