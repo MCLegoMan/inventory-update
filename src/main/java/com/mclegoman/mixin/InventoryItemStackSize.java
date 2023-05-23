@@ -1,6 +1,5 @@
 package com.mclegoman.mixin;
 
-import com.mclegoman.InventoryMain;
 import com.mclegoman.config.InventoryConfig;
 import net.minecraft.item.Item;
 import org.spongepowered.asm.mixin.Final;
