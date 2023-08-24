@@ -1,6 +1,6 @@
 package com.mclegoman.inventoryupdate.config;
 
-import jdk.internal.net.http.common.Pair;
+import com.mclegoman.inventoryupdate.util.InventoryPair;
 import me.magistermaks.SimpleConfig;
 
 public class InventoryConfig {
@@ -17,9 +17,9 @@ public class InventoryConfig {
     }
     private static void createConfigs() {
         configs.addComment("inventory-update properties file");
-        configs.addKeyValuePair(new Pair<>("max_stack.default", 1));
-        configs.addKeyValuePair(new Pair<>("max_stack.mini", 1));
-        configs.addKeyValuePair(new Pair<>("remove_limit", false));
+        configs.addKeyValuePair(new InventoryPair<>("max_stack.default", 1));
+        configs.addKeyValuePair(new InventoryPair<>("max_stack.mini", 1));
+        configs.addKeyValuePair(new InventoryPair<>("remove_limit", false));
     }
     private static void assignConfigs() {
         MAX_STACK_DEFAULT = CONFIG.getOrDefault("max_stack.default", 1);

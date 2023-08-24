@@ -1,6 +1,6 @@
 package com.mclegoman.inventoryupdate.config;
 
-import jdk.internal.net.http.common.Pair;
+import com.mclegoman.inventoryupdate.util.InventoryPair;
 import me.magistermaks.SimpleConfig;
 
 import java.util.ArrayList;
@@ -8,13 +8,13 @@ import java.util.List;
 
 public class InventoryConfigProvider implements SimpleConfig.DefaultConfig {
     private String configContents = "";
-    public List<Pair> getConfigsList() {
+    public List<InventoryPair> getConfigsList() {
         return configsList;
     }
-    private final List<Pair> configsList = new ArrayList<>();
-    public void addKeyValuePair(Pair<String, ?> keyValuePair) {
+    private final List<InventoryPair> configsList = new ArrayList<>();
+    public void addKeyValuePair(InventoryPair<String, ?> keyValuePair) {
         configsList.add(keyValuePair);
-        configContents += keyValuePair.first + "=" + keyValuePair.second + "\n";
+        configContents += keyValuePair.getLeft() + "=" + keyValuePair.getRight() + "\n";
     }
     public void addComment(String string) {
         configContents += "#" + string + "\n";
