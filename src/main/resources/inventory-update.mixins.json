@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.mclegoman.inventoryupdate.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "InventoryItemMixin",
+    "InventorySlotMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

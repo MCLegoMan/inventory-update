@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "inventory-update",
+  "version": "${version}",
+  "name": "Inventory Update",
+  "description": "This mod fixes minecraft's inventory problem, by forcing you to use one item at a time.\\n\\nYou can configure the max item count in the config file.\\n\\nCredits and Attribution:\\n- SimpleConfig",
+  "authors": [
+    "MCLegoMan"
+  ],
+  "contact": {
+    "sources": "https://github.com/MCLegoMan/inventory-update",
+    "issues": "https://github.com/MCLegoMan/inventory-update/issues"
+  },
+  "license": "CC-BY-4.0",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.mclegoman.inventoryupdate.InventoryMain"
+    ]
+  },
+  "mixins": [
+    "inventory-update.mixins.json"
+  ],
+  "depends": {
+    "minecraft": "1.0.0-beta.7.3"
+  }
+}
